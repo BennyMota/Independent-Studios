@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang =eng>
+<head>
+    <meta charset="UTF 8">
+    <title>Independent Studios</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+</head>
+<body onload="slider()">
+    <div class="banner">
+        <div class="slider">
+            <img src="Images/img5.JPG" id="slideImg">
+            <div class="overlay">
+            <div class="header">
+            <nav id="navbar">
+                <a href="index.html"><img src="Images/lettering%204%20white.png" class="logo"></a>
+                <ul id="menu">
+                    <li> <a href=""><font size="2">HOME</font></a></li>
+                    <li> <a href=""><font size="2">SHOP</font></a></li>
+                    <li> <a href=""><font size="2">ARTIST</font></a></li>
+                    <li> <a href=""><font size="2">EVENTS</font></a></li>
+                    <li> <a href=""><font size="2">SOUL COUNSIL</font></a></li>
+                </ul>
+                <div class="menu-icons">
+                    <img src="images/white shopping bag.png"/>
+                </div>
+            </nav>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    </div>
+    <p class="text">
+    INDEPENDENT STUDIOS, OIHSAOHOHOSAHASHOAHASIDHWQIHQRIYPIRYWPTPQIYTEPHOUEELJHFOWHFHEFSPIHPAIFPASFS NIAJHPAJFA[JAIHGPAHPIAHHPADIF PIFAPFUASJF[AJF[ASOF[SAOJF[SAJN  SPIFJASFJSA[OJFSAOJJ[EEFIEHE]]]]]]] SUFHASOUFHIUEGFIYEGFIQ HFUGFEFGGF IYGFGFEGFBS FIAF SAUGAIFGFOAF IAGSUGFOASB SUFGASOSGFSF ASUFGOASOYFEPUFP SUOFGOFALFSHOFH OASHHFEBELEHF OAUHUOAO;WKFFBIFFHEFH FOFHHEHFBFSHFFHIE EIHFFEIFHEFHEIHF EIFHEFEHPFIHFPE S  IOFHFBMBVXVXZVIH EHWEEFHIEWHF ELOEHEIFHLXN EELNEW EVNEWIV WEVWEJIEEIHEWIP WEPHP VE PIEHEPIWHV WEPIVHEVHE VWEHIVH VWEVPIEV O DHHV SDHVPIHEPJFH EPIH GPIV PPIHV PIHV HPV PE IHVHV HPVHI HV DPHSP IHPV HPIW HPH EPV HPH VP VV PIWRHRIPVPIDH IVHRVVHP IHVPIHVPIRVI
+    </p>
+    
+    <p class="text">
+    INDEPENDENT STUDIOS, OIHSAOHOHOSAHASHOAHASIDHWQIHQRIYPIRYWPTPQIYTEPHOUEELJHFOWHFHEFSPIHPAIFPASFS NIAJHPAJFA[JAIHGPAHPIAHHPADIF PIFAPFUASJF[AJF[ASOF[SAOJF[SAJN  SPIFJASFJSA[OJFSAOJJ[EEFIEHE]]]]]]] SUFHASOUFHIUEGFIYEGFIQ HFUGFEFGGF IYGFGFEGFBS FIAF SAUGAIFGFOAF IAGSUGFOASB SUFGASOSGFSF ASUFGOASOYFEPUFP SUOFGOFALFSHOFH OASHHFEBELEHF OAUHUOAO;WKFFBIFFHEFH FOFHHEHFBFSHFFHIE EIHFFEIFHEFHEIHF EIFHEFEHPFIHFPE S  IOFHFBMBVXVXZVIH EHWEEFHIEWHF ELOEHEIFHLXN EELNEW EVNEWIV WEVWEJIEEIHEWIP WEPHP VE PIEHEPIWHV WEPIVHEVHE VWEHIVH VWEVPIEV O DHHV SDHVPIHEPJFH EPIH GPIV PPIHV PIHV HPV PE IHVHV HPVHI HV DPHSP IHPV HPIW HPH EPV HPH VP VV PIWRHRIPVPIDH IVHRVVHP IHVPIHVPIRVI
+    </p>
+    
+    <p class="text">
+    INDEPENDENT STUDIOS, OIHSAOHOHOSAHASHOAHASIDHWQIHQRIYPIRYWPTPQIYTEPHOUEELJHFOWHFHEFSPIHPAIFPASFS NIAJHPAJFA[JAIHGPAHPIAHHPADIF PIFAPFUASJF[AJF[ASOF[SAOJF[SAJN  SPIFJASFJSA[OJFSAOJJ[EEFIEHE]]]]]]] SUFHASOUFHIUEGFIYEGFIQ HFUGFEFGGF IYGFGFEGFBS FIAF SAUGAIFGFOAF IAGSUGFOASB SUFGASOSGFSF ASUFGOASOYFEPUFP SUOFGOFALFSHOFH OASHHFEBELEHF OAUHUOAO;WKFFBIFFHEFH FOFHHEHFBFSHFFHIE EIHFFEIFHEFHEIHF EIFHEFEHPFIHFPE S  IOFHFBMBVXVXZVIH EHWEEFHIEWHF ELOEHEIFHLXN EELNEW EVNEWIV WEVWEJIEEIHEWIP WEPHP VE PIEHEPIWHV WEPIVHEVHE VWEHIVH VWEVPIEV O DHHV SDHVPIHEPJFH EPIH GPIV PPIHV PIHV HPV PE IHVHV HPVHI HV DPHSP IHPV HPIW HPH EPV HPH VP VV PIWRHRIPVPIDH IVHRVVHP IHVPIHVPIRVI
+    </p>
+    
+    
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+        
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    
+    <script>
+    var slideImg = document.getElementById("slideImg");
+    
+        var images = new Array(
+            "images/img3.JPG",
+            "images/img4.JPG",
+            "images/img5.JPG",
+        );
+        
+        var len = images.length;
+        var i = 0;
+        
+        function slider(){
+            if(i > len-1){
+                i = 0;
+            }
+            slideImg.src = images[i];
+            i++;
+            setTimeout('slider()',3000);
+        }
+    
+    </script>
+    <div class="categories">
+        <div class="small container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/img6.jpg" />
+                </div>
+                <div class="col-3">
+                    <img src="images/img8.jpg" />
+                </div>
+                <div class="col-3">
+                    <img src="images/img2.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
