@@ -12,7 +12,7 @@
     position: relative;
 }
 body{
-    background-color: #bfc3c9;
+    background-color: #fff;
 }
 .background{
     min-height: 100vh;
@@ -45,10 +45,14 @@ body{
     background-size: cover;
 }
 .navbar{
+    background-color: black;
+    height: 80px;
     display: flex;
     text-align: center;
     padding: 2px;
     padding-left: 100px;
+    position: sticky;
+    top: 0;
 }
 nav{
     flex: 1;
@@ -60,6 +64,7 @@ nav{
     position: relative;
     display: flex;
     width: 150px;
+    line-height: 80px;
 }
 nav ul{
     display: inline-block;
@@ -84,6 +89,7 @@ nav ul li a{
 }
 a:hover{
     color: #c4a484;
+    transition: 2s;
 }
 .btn{
     color: #fff;
@@ -123,7 +129,8 @@ a:hover{
     } 
 }
 .artists{
-    margin-left: 5%;
+    margin-top: 5%;
+    margin-left: 8%;
 }
 .names{
     text-align: center;
@@ -135,4 +142,16 @@ a:hover{
     border-radius: 100px;
     margin: 60px;
     padding: 2px;
+}
+.Events{
+    margin: 5%;
+    margin-left: 10%;
+    padding-top: 5%;
+    text-align: center;
+    width: 80%;
+    background-position: center;
+    background-color: #dedbd5;
+    background-repeat: no-repeat;
+    height: 80px;
+    position: relative;
 }
