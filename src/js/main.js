@@ -1,4 +1,2 @@
-document.getElementById('nav', function(){
-    var navbar = document.querySelector('navbar');
-    navbar.classList.toggle('sticky', window.scrollY > 0)
-})
+ScrollReveal().reveal('.Inner', {interval:300, reset: true});
+ScrollReveal().reveal('.Description', {delay:500, reset: true});
